@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% load static %}
+<h3>Total Balance: {{balance}}</h3>
+
+<a class="btn btn-success" href="{% url 'bank:deposit' %}" role="button">Deposit</a>
+<a class="btn btn-success" href="{% url 'bank:withdraw' %}" role="button">Withdraw</a>
+<a class="btn btn-success" href="{% url 'bank:transaction' %}" role="button">Transactions</a>
+
+{% endblock %}
